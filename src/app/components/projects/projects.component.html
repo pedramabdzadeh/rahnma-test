@@ -1,0 +1,16 @@
+<main>
+  <ul>
+
+    <li *ngFor="let project of (projects$| async).projects">
+      {{project|json}}
+    </li>
+  </ul>
+</main>
+
+<button id="add-button" (click)="openAddProjectDialog()">
+  Add Project
+</button>
+
+<app-add-project [show]="this.showAddProjectDialog">
+
+</app-add-project>
