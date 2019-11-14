@@ -1,1 +1,13 @@
-<p>navigation-bar works!</p>
+
+<nav>
+  <button id="previous" (click)="previous()" *ngIf="(step$|async).steps !== 0">
+    Previous
+  </button>
+  <button id="next" (click)="next()" *ngIf="(step$|async).steps !== 3">
+    Next
+  </button>
+  <button id="submit" *ngIf="(step$|async).steps === 3">
+    Submit
+  </button>
+</nav>
+

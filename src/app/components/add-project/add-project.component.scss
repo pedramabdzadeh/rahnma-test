@@ -8,7 +8,6 @@ main {
 }
 
 dialog {
-  //display: flex;
   background: white;
   border: 0;
   padding: 1%;
@@ -18,7 +17,12 @@ dialog {
   width: 600px ;
   top: 10px;
   left: 0;
-  //background-color: red;
   z-index: 2;
+}
+
+section {
+  position: absolute;
+  top: 15%;
+  padding: 1%;
 }
 

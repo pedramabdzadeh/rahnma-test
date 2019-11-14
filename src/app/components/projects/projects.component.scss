@@ -39,3 +39,20 @@ ul {
   //color: black;
 }
 
+.labels {
+  border-bottom: 1px solid lightgrey;
+  line-height: 1.5;
+  padding: 1% 1% 1% 15%;
+  color: grey;
+  display: flex;
+  flex-direction: row;
+  label {
+    display: block;
+    width: 10vw;
+  }
+}
+.label {
+  display: block;
+  width: 18vw;
+  color: black;
+}

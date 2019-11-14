@@ -1,8 +1,14 @@
 <main>
   <ul>
-
-    <li *ngFor="let project of (projects$| async).projects">
-      {{project|json}}
+    <div class="labels">
+      <label *ngFor="let item of headersList;" >
+        {{item}}
+      </label>
+    </div>
+    <li *ngFor="let project of (projects$| async).projects;" class="labels">
+      <label *ngFor="let item of headersList;" class="label">
+        {{project[item]}}
+      </label>
     </li>
   </ul>
 </main>

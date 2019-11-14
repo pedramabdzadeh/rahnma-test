@@ -9,7 +9,7 @@ import {Store} from '@ngrx/store';
   styleUrls: ['./add-project.component.scss']
 })
 export class AddProjectComponent implements OnInit {
-  step$: Observable<number> = this.store.select(state => state.step);
+  step$= this.store.select(state => state);
   @Input() show: boolean;
 
   constructor(private store: Store<StepState>) { }

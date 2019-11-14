@@ -4,7 +4,7 @@ import * as ProjectActions from '../actions/project.actions';
 
 const reducer = createReducer(
   initialProjectState,
-  on(ProjectActions.getProjectSuccess, (state: ProjectState, action) =>
+  on(ProjectActions.getProjectSuccess, (state: ProjectState, action: {type, payload}) =>
     ({...state, projects: action.payload}))
 );
 

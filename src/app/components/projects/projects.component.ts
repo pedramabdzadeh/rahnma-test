@@ -13,6 +13,7 @@ import * as ProjectActions from '../../actions/project.actions';
 export class ProjectsComponent implements OnInit {
   projects$: Observable<Project[]> = this.store.pipe(select(state => state.projects));
   showAddProjectDialog = false;
+  headersList = ['name', 'owner', 'country', 'ship date', 'assigned', 'status'];
 
   constructor(private store: Store<ProjectState>) {}
 

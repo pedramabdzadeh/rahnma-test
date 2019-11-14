@@ -1,3 +1,9 @@
-<main>
-
-</main>
+<section>
+  <div *ngFor="let item of items;let i =index" class="steps-item">
+<!--    <img *ngIf="">-->
+<!--    <img *ngIf="">-->
+    <label [style.color]="(step$|async).steps < i ? 'grey': 'blue'">
+      {{item.title}}
+    </label>
+  </div>
+</section>

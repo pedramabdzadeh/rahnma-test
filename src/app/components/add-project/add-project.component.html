@@ -2,7 +2,12 @@
   <dialog open>
     <app-steps>
     </app-steps>
-
+    <section>
+      <app-project-details *ngIf="(step$|async).steps === 0"></app-project-details>
+      <app-project-settings *ngIf="(step$|async).steps === 1"></app-project-settings>
+      <app-delivery-details *ngIf="(step$|async).steps === 2"></app-delivery-details>
+      <app-preview *ngIf="(step$|async).steps === 3"></app-preview>
+    </section>
     <app-navigation-bar>
     </app-navigation-bar>
   </dialog>

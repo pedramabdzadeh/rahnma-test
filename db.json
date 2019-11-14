@@ -1,8 +1,8 @@
 {
   "projects": [
     {
-      "name": "1",
-      "owner": "1",
+      "name": "myProject",
+      "owner": "ped",
       "country": "China CN",
       "ship date": "2019/1/1",
       "customer": "2",

@@ -1,6 +1,17 @@
-main {
-  display: flex;
-  flex-direction: row;
+section {
   position: absolute;
-  height: 10vh;
+  border-bottom: 1px lightgrey solid;
+  width: 95%;
+  padding: 1%;
+  top: 5%;
+  height: 10%;
+  display: flex;
+
+  vertical-align: center;
+  flex-direction: row;
+}
+.steps-item {
+  font-size: 1vw;
+  width: 20%;
+  text-align: center;
 }

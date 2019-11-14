@@ -1,0 +1,51 @@
+nav {
+  position: absolute;
+  border-top: 1px lightgrey solid;
+  width: 95%;
+  bottom: 0;
+  height: 15%;
+}
+
+%button {
+  position: absolute;
+  bottom: 35%;
+  height: 30%;
+  width: 15%;
+  cursor: pointer;
+  padding: 1%;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+  align-items: center;
+  border: none;
+}
+%button:focus {
+  outline: 0;
+  border: 0;
+
+}
+%button:hover {
+  filter: saturate(4);
+  transition: filter ease-in 200ms;
+}
+
+#next, #submit {
+  @extend %button;
+  right: 1%;
+  background-color: royalblue;
+}
+
+#previous {
+  @extend %button;
+  left: 1%;
+  background-color: white;
+  border: 1px solid lightgrey;
+  color: black;
+}
+#previous:focus {
+  border: 1px solid lightgrey;
+}
+
+#submit {
+  background-color: forestgreen;
+}
