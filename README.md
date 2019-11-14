@@ -3,7 +3,7 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.1.
 
 ## Fake server
-To execute fake server after installation of json-server from https://github.com/typicode/json-server, use json-server --watch db.json
+To execute fake server after installation of json-server from https://github.com/typicode/json-server, `use json-server --watch db.json`
 
 ## Development server
 
